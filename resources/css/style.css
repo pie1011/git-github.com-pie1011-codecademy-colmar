@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+    --color-white: #fff;
+    --color-dark: rgb(77, 77, 77);
+    --color-mid: rgb(128, 128, 128);
+    --color-mid-light: rgb(196, 196, 196);
+    --color-light: rgb(196, 196, 196);
+    --color-highlight: rgb(65, 144, 197);
+}
+:root {
+    box-sizing: border-box;
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    min-width: 100vw;
+}
+body {
+    margin: 0 auto;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 64px;
+    padding: 16px 24px;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.logo {
+    height: 32px;
+}
+.logo img {
+    height: 100%;
+}
+.logo-one {
+    font-weight: bold;
+    color: var(--color-dark);
+}
+.logo-two {
+    color: var(--color-mid);
+}
+nav ul li {
+    display: inline;
+    padding-left: 16px;
+    font-size: 1.5rem;
+}
+a {
+    text-decoration: none;
+    color: var(--color-highlight);
+    font-size: 1.5rem;
+}
+li a {
+    color: var(--color-dark);
+}
+li a:hover {
+    color: var(--color-highlight);
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: var(--color-dark);
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+p {
+    font-size: 1.75rem;
+    color: var(--color-mid);
+    margin: 0;
+}
+button {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: inherit;
+    padding: 8px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: 0;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--color-mid);
+}
+
+
+header {
+    background: var(--color-mid-light);
+}
+.container {
+    display: flex;
+    padding: 32px 12px;
+}
+.container-left, .container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 0 12px;
+}
+.container-left {
+    width: 60%;
+    padding-left: 24px;
+}
+.container-right {
+    display: flex;
+    width: 40%;
+    margin-right: 50px;
+}
+header img, section img {
+    width: 100%;
+}
+article {
+    display: flex;
+    margin: 0 24px;
+}
+article img {
+    width: 35%;
+    height: initial;
+    margin: 0 12px 24px 12px;
+}
